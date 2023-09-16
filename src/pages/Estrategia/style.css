@@ -1,0 +1,231 @@
+:root {
+    --fonte-principal: 'Lato', sans-serif;
+    --azul: #003D73;
+  }
+  
+  /* body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    background-color: #EEF3FA;
+  } */
+  
+.main_estrategias {
+  display: flex;
+    width: 95%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+  .menu-master {
+    display: flex;
+  }
+  
+  .menu {
+    width: 200px;
+    height: 95vh;
+    background-color: var(--azul);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo_cima img {
+    width: 38px;
+    height: 38px;
+  }
+  
+  img.hover1{
+    width: 25px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    vertical-align: 0.875em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .corpo {
+    flex: 1;
+    padding: 55px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buscador {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buscador input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #003D73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .folders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    width: 92%;
+    justify-items: start;
+    justify-content: space-between;
+  }
+  
+  .folder {
+    border: 1px solid #ccc;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .folder img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .folder span {
+    color: black;
+  }
+  
+  .botao-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  
+  .botao-links a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  /* Mobile */
+  .menu_mobile {
+    background-color: var(--azul);
+    width: 90px;
+    height: 85vh;
+    border-radius: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .menu_mobile .mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .menu_mobile .mobile-menu-items a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .resp_config {
+    width: 25px;
+    margin-top: 135px;
+  }
+  
+  .resp_logout {
+    width: 25px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .menu-master {
+      flex-direction: column;
+    }
+  
+    .menu {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      display: none;
+    }
+  
+    .menu .logo_cima {
+      display: none;
+    }
+  
+    .menu .botao-links {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .menu .botao-links a {
+      margin-top: 0;
+    }
+  
+    .corpo {
+      padding: 25px 160px 0 45px;
+    }
+  
+    .buscador input[type="text"] {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+  
+  .resp_foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 5px;
+  }
+  
+    .resp_hamburguer {
+      margin-top: 25px;
+      width: 35px;
+    }
+  
+    .menu_mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .folders {
+      grid-template-columns: 1fr;
+    }
+  }
+  

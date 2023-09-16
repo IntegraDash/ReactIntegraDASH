@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.main_login {
+    width: 100%;
+    height: 100%;
+}
+
+.login_paginatotal {
+    height: 100%  ;
+    width: 100%;
+    background-color: #053155;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_rapaz_dashboard {
+    height: 96%;
+    width: 96%;
+}
+
+.login_rapaz_dashboard img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.login_quadrado_branco {
+    height: 100vh;
+    width: 45%;
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login_pagina_metade1 {
+    display: flex;
+    width: 55%;
+    /* height: 100%; */
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.Logo_Login {
+    width: 35%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+
+
+.clique_aqui {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    /* margin-top: 10px; */
+    color: gray;
+    flex-direction: row;
+   
+}
+
+.clique_aqui a {
+    margin-left: 5px;
+    color: #053155;
+    text-decoration: none;
+    width: 31%;
+    font-weight: 800;
+}
+/* 
+.alinhamento_login {
+    display: flex;
+    flex-direction: column;
+} */
+
+.alinhamento_input {
+    display: flex;
+    flex-direction: column;
+
+  
+}
+
+.negrito {
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+form {
+padding-bottom: 10px;
+
+}
+
+::placeholder {
+    color: rgb(162, 162, 162);
+    font-size: 15px;
+}
+
+.botao_entrar {
+    background-color: #1b77c2;
+    color: #e8e8e8;
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+    border: none;
+
+
+           }
+
+
+.zoinho {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+
+.testefonte2{
+
+display: none;
+
+}
+
+ .botao_entrar:hover {
+    background-color: #3b6689;
+    
+ }
+
+
+.login_senha {
+    height: 35px;
+    color: rgba(96, 95, 95, 0.304);
+    background-color: white;
+    width: 300px;
+    text-indent: 10px;
+    font-size: 15px;
+    border-color: rgba(96, 95, 95, 0.304);
+}
+
+.login_email {
+    background-color: white;
+    height: 35px;
+    font-size: 15px;
+    width: 300px;
+    text-indent: 10px;
+    border-color: rgba(96, 95, 95, 0.304);
+    color: rgba(96, 95, 95, 0.304);
+}
+
+.logindesenvolvido_por {
+    height: 26px;
+    /* margin-top: 100px; */
+    width: 90%;
+}
+
+
+
+.Logo_Claro {
+    display: none;
+}
+
+/* .zoio {
+
+    position: relative;
+    height: 10%;
+    width: 10%;
+
+    } */
+
+    .login_zoio{
+        cursor: pointer;
+        position: absolute;
+        width: 30px;
+        left: 265px;
+        bottom: 4px;
+      }
+    
+.teste1 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: black;
+}
+
+label {
+    color: black;
+    padding: 5px;
+    position: relative;
+    z-index: 70;
+}
+
+.mantenha-me {
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 15px;
+    background-color: white;
+    width: 300px;
+}
+
+.checkbox {
+    display: flex;
+    color: white;
+    background-color: white;
+}
+
+.testezoom {
+
+    width: 100%;
+    height: 100%;
+}
+
+.desenvolvido {
+    display: flex;
+    height: 3%;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+
+
+    .quadrado_branco {
+        width:100% ;
+
+} 
+
+.pagina_metade1 { 
+    display: none;
+    
+}
+
+.quadrado_branco {
+    background-image: url(img/fundomobile\ 1.png);
+    background-size: 100vw 70%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.Logo_Integradash {
+    display: none;
+}
+
+.Logo_Claro {
+    display: flex;
+    max-width: 250px;
+    margin-top:100px;
+    margin-left: 30px;
+
+}
+
+.alinhamento_input{ 
+
+margin-top: 80px;
+
+}
+
+/* TESTE PARA ALTERAR O TEXTO CONFORME DIMINUI A TELA */
+
+.testefonte {
+display: flex; /*none*/
+}
+
+.testefonte2{
+    display: none; /*flex*/
+}
+
+}

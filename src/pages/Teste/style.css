@@ -1,0 +1,19 @@
+p {
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.vermelho {
+    width: 250px;
+    height: 130px;
+    padding: 10px;
+    background-color: var(--vermelho);
+    margin-top: 150px;
+    border-radius: 10px;
+    display: flex;
+flex-direction: row;
+}
+
+

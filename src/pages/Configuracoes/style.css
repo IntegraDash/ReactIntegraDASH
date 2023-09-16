@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: var(--branco);
+}
+
+:root {
+    --azulC: #003D73;
+    --azulE: #053155;
+    --azulBB: #1B77C2;
+    --branco: #ffffff;
+    --verde: #4ECB71;
+    --preto: #000000;
+    --azulBranco: #EAEFF6;
+}
+
+
+/* #root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+} */
+
+.body {
+      width: 95%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+/* MAIN */
+
+.main_Config {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* overflow-y: scroll; */
+    gap: 40px;
+    padding: 40px 0;
+     
+}
+
+.main_Config h1 {
+    align-self: center;
+
+    font-size: 2.3em;
+    color: var(--preto);
+}
+
+.config-geral {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 100px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 15%;
+    /* padding: 10px 20px; */
+
+    position: relative;
+
+    border-radius: 40px;
+    border: 1px solid #000;
+
+    width: 380px;
+    height: 340px; /* 400px */
+}
+
+.infos-perfil {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* .perfil span { */
+.sub-barra{
+    display: flex;
+    justify-content: center;
+    
+    border-top: solid 1px black;
+    
+    text-align: center;
+    color: black;
+    
+    width: 378px;
+    padding: 5px;
+    /* margin-top: 40px; */
+}
+
+.txt-perfil {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.txt-perfil label {
+    color: var(--preto);
+}
+
+.perfil img {
+    position: absolute;
+    width: 95px;
+    bottom: 230px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding-bottom: 5px;
+
+    border: none;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.364);
+
+    background: none;
+
+    font-weight: 600;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    color: var(--preto);
+}
+
+input[type="text"]::placeholder {
+    color: var(--preto);
+}
+
+.config_button {
+    width: 373px;
+    padding: 10px;
+    gap: 10px;
+    /* border: none; */
+    justify-content: center;
+    align-items: center;
+    background-color: #003d73;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.config_button:hover {
+    background-color: #003d73da;
+    font-size: 0.9em;
+    color: #f0e2e2;
+}
+
+.box-config {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 40px */
+}
+
+.main_Config h1, .main_Config span, input[type="text"]::placeholder, .main_Config button {
+    text-transform: uppercase;
+}
+
+.main_Config h1, .main_Config span, input[type="text"]::placeholder {
+    color: var(--preto);
+}
+
+.aparencia, .notificacoes {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    
+    width: 380px;
+    height: 160px; /* 180px */    
+
+    border-radius: 40px;
+    border: 1px solid #000;
+}
+
+.aparencia .op-radio .tf:nth-child(1), .notificacoes .op-radio .tf:nth-child(1) {
+    padding-right: 35px;
+    font-weight: 600;
+}
+
+.aparencia .op-radio:nth-child(1) {
+    padding-top: 40px;
+}
+
+.notificacoes .op-radio:nth-child(1) {
+    padding-top: 30px;
+}
+
+
+.op-radio {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /* padding-bottom: 30px; */
+    align-self: center;
+}
+
+
+
+.tf {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+/* .aparencia .op-radio div:nth-child(1), .tf span:nth-child(1) {
+    padding-bottom: 15px;
+} */

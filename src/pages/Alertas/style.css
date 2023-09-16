@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .charts {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+  .chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+.charts {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+  
+  @media screen and (max-width: 796px) {
+    body {
+        width: 100%;
+        background-size: 100% 70%;
+        flex-direction: row-reverse;
+    }
+    @media (max-width:500px) {
+      
+      .logo h2 {
+          font-size: 20px;
+      }
+      .search {
+          width: 80%;
+      }
+      .search input {
+          padding: 0 20px;
+      }
+      .fa-bell {
+          margin-right: 5px;
+      }
+      .cards {
+          grid-template-columns: 1fr;
+      }
+      .doughnut-chart {
+          padding: 10px;
+      }
+      #doughnut {
+          padding: 0px;
+      }
+      .user {
+          width: 40px;
+          height: 40px;
+      }
+    }
+  }
+    
+  
+  
+  
+  
+  
+  
+  

@@ -28,7 +28,7 @@
     display: flex;
     height: 100vh;
     background: #003D73;
-    width: 5%;
+    width: 3.5%;
     /* box-shadow: 5px 0 0 #003d73; */
     /* border-left: 10px solid #003D73; */
     overflow: hidden;
@@ -41,7 +41,7 @@
 }
 
 .navigation:hover {
-    width: 18%;
+    width: 12%;
 }
 
 .navigation ul {

@@ -10,7 +10,7 @@ import MenuLateral from "../../components/MenuLateral"
 export function Analises() {
 
     return (
-        <div className="body_analises">
+        <>
             <MenuLateral />
 
             <main className="main_analises">
@@ -232,6 +232,6 @@ export function Analises() {
 
                 </section>
             </main>
-        </div>
+            </>
     )
 }

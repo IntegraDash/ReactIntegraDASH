@@ -73,14 +73,18 @@ h2 {
 }
 
 .pos_centro a {
+    display: flex;
     padding: 12px 0;
     background-color: #0B7ABF;
     color: white;
     text-decoration: none;
     text-align: center;
     width: 155px;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
     height: 51px;
+    margin-left: 30p;
+    /* left: 30px; */
+    justify-content: center;
  }
 
 .direito h3{
@@ -103,6 +107,7 @@ h2 {
 }
 
 .h3p h2 {
+    width: 222px;
     color: white;
 }
 
@@ -139,10 +144,11 @@ h2 {
 }
  
 .inovacao {
+    color: white;
     font-size: 20px;
     font-weight: 400;
     width: 600px;
-    text-align:justify;
+    text-align: justify;
     margin-bottom: 40px;
 }
 

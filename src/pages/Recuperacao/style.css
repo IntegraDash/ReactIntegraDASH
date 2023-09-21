@@ -14,15 +14,15 @@
     justify-content: space-between;
 }
 
-.rapaz_dashboard {
-    height: 100vh;
-    width: 100%;
+.recuperacao_rapaz_dashboard {
+    height: 96%;
+    width: 96%;
 }
 
 
 .quadrado_branco {
     height: 100vh;
-    width: 50%;
+    width: 45%;
     background-color: #fcfcfc;
     display: flex;
     align-items: center;
@@ -205,6 +205,19 @@ h1 {
 
 .recuperacao_teste1 h1{
     font-size: 30px;
+}
+
+.recuperação_pagina_metade1 {
+    display: flex;
+    width: 55%;
+    /* height: 100%; */
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.recuperação_pagina_metade1 img {
+    height: 100%;
+    width: 100%;
 }
 
 

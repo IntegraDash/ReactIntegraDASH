@@ -46,10 +46,10 @@ function Recuperacao() {
         />
       </div>
     </div>
-    <section className="pagina_metade1">
-      <div>
+    <section className="recuperação_pagina_metade1">
+      <div className="recuperacao_rapaz_dashboard">
         <img
-          className="rapaz_dashboard"
+          
           src={group36}
           alt="Rapaz em frente a um Dashboard apontando pra ele"
         />

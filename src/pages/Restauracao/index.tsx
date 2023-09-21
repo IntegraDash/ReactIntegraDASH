@@ -116,10 +116,7 @@ function Restauracao() {
         </div>
         <section className="restauracao_pagina_metade1">
           <div className="restauracao_rapaz_dashboard">
-            <img
-              src={FundoDestok}
-              alt="Rapaz em frente a um Dashboard apontando pra ele"
-            />
+            <img src={FundoDestok} alt="Rapaz em frente a um Dashboard apontando pra ele"/>
           </div>
         </section>
       </section>

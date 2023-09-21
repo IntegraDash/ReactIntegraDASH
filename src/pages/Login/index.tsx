@@ -98,7 +98,7 @@ function Login() {
                                 <div className="clique_aqui">
                                     <p className="testefonte">Esqueceu a senha?</p>
                                     <p className="testefonte2"> teste </p>
-                                    <Link to={'/recuperacao'}>Clique aqui</Link>
+                                    <Link to={'/restauracao'}>Clique aqui</Link>
                                 </div>
                             </form>
                         </div>

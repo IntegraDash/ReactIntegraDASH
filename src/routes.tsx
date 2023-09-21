@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Alertas from './pages/Alertas'
+
 
 import Favoritos from './pages/Favoritos'
 import Login from './pages/Login' 
@@ -13,6 +13,7 @@ import Configuracoes from "./pages/Configuracoes";
 
 import './style.css'
 import Painel from "./pages/Painel";
+import Restauracao from "./pages/Restauracao";
 
 function MainRoutes() {
 
@@ -28,6 +29,7 @@ function MainRoutes() {
             <Route path="/estrategias" element={<Estrategia/>} />
             <Route path="/configuracoes" element={<Configuracoes/>}/>
             <Route path="/alertas" element={<Painel/>} />
+            <Route path="/restauracao" element={<Restauracao/>} />
         </Routes>
     )
 }

@@ -288,7 +288,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 66vw;
+        width: 95%;
     
                 }
     }
@@ -301,10 +301,23 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .local_dos_arquivos {
 
-        width: 65vw;
+    width: 95%;
 
             }
 }
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   novo
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 1400px) {
+
+    .local_dos_arquivos {
+    
+        width: 95%;
+    
+                }
+    }
     
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                R E S P O N S I V O   novo2
@@ -314,7 +327,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 64vw;
+        width: 95%;
     
                 }
     }
@@ -327,7 +340,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 63vw;
+        width: 95%;
     
                 }
     }
@@ -340,7 +353,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 61vw;
+        width: 95%;
     
                 }
     }
@@ -353,7 +366,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 59vw;
+        width: 95%;
     
                 }
     }
@@ -366,7 +379,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 57vw;
+        width: 95%;
     
                 }
     }
@@ -379,7 +392,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 54vw;
+        width: 95%;
     
                 }
     }
@@ -392,7 +405,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 52vw;
+        width: 95%;
     
                 }
     }
@@ -405,7 +418,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 49vw;
+        width: 95%;
     
                 }
     }
@@ -418,7 +431,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 46vw;
+        width: 95%;
     
                 }
     }
@@ -431,7 +444,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 42vw;
+        width: 95%;
     
                 }
     }
@@ -444,7 +457,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 39vw;
+        width: 95%;
     
                 }
     }
@@ -457,7 +470,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 36vw;
+        width: 95%;
     
                 }
     }
@@ -470,7 +483,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .local_dos_arquivos {
     
-            width: 28vw;
+        width: 95%;
     
                 }
     }

@@ -26,7 +26,7 @@ function Login() {
 
         const usuario: object = {
             email: email,
-            password: senha
+            senha: senha
         }
 
         api.post("login", usuario).then((response) => {
@@ -94,7 +94,7 @@ function Login() {
                                     <input className="checkbox" type="checkbox" name="checkbox" />
                                     <label htmlFor="">Mantenha-me conectado</label>
                                 </div>
-                                <button className="login_botao_entrar">Entrar</button>
+                                <button className="login_botao_entrar" type="submit">Entrar</button>
                                 <div className="clique_aqui">
                                     <p className="testefonte">Esqueceu a senha?</p>
                                     <p className="testefonte2"> teste </p>

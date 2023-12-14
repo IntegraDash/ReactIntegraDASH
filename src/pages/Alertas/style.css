@@ -1,3 +1,69 @@
+.cards {
+    width: 100%;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+.cards .card {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    height: 200px;
+    margin-top: 100px;
+    width: 300px;
+}
+
+.number {
+  font-size: 35px;
+  font-weight: 500;
+  color: #2b0707;
+  width: 100px;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+
+.card-name {
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px;
+}
+
+.icon-box i {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+
+.cards .critico .number {
+    background-color: #ff8a8a;
+}
+
+
+
+.cards .urgentes .number{
+    background-color:#75b9fc;
+}
+
+
+.cards .normais .number {
+    background-color: #f6f66a;
+}
+.cards .concluido .number {
+    background-color: #78f58d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,51 +75,67 @@
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
+    width: 95%;
+    height: 100vh;
+    align-items: center;
+    
   }
   
-  .charts {
-    display: grid;
-    grid-gap: 20px;
-    width: 100%;
-    padding: 20px;
-    padding-top: 0;
+  .body {
+    height:100vh;
+    overflow-y: scroll;
 }
-  .chart {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    width: 100%;
+  
+.body::-webkit-scrollbar {
+    display: none;
 }
 
-.chart h2 {
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #666;
-    text-align: center
-}
-.charts {
-    display: grid;
-    grid-gap: 20px;
-    width: 100%;
-    padding: 20px;
-    padding-top: 0;
-}
 
-.chart {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    width: 100%;
-}
+  .testecalendario {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+  }
 
-.chart h2 {
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #666;
-    text-align: center
-}
+  .grafico-demonstrativo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grafico-demonstrativo img:nth-child(1) {
+    width: 800px;
+  }
+
+  .grafico-demonstrativo img:nth-child(2) {
+    width: 500px;
+  }
+
+  .react-calendar {
+  
+    background: #ff1111;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: row;
+     color: var(#ffffff);
+     justify-content: space-between;
+     align-items: flex-start;
+     width: 100%;
+     height: 100%;
+  }
+ .mainCards {
+    display: flex;
+    margin: 0px 92px;
+    flex-direction: column;
+    padding-right:40px;
+ }
+
+ .img  {
+    display: flex;
+    width: 70px;
+ }
+ 
   
   @media screen and (max-width: 796px) {
     body {
@@ -61,40 +143,21 @@
         background-size: 100% 70%;
         flex-direction: row-reverse;
     }
-    @media (max-width:500px) {
-      
-      .logo h2 {
-          font-size: 20px;
-      }
-      .search {
-          width: 80%;
-      }
-      .search input {
-          padding: 0 20px;
-      }
-      .fa-bell {
-          margin-right: 5px;
-      }
-      .cards {
-          grid-template-columns: 1fr;
-      }
-      .doughnut-chart {
-          padding: 10px;
-      }
-      #doughnut {
-          padding: 0px;
-      }
-      .user {
-          width: 40px;
-          height: 40px;
-      }
-    }
+  
+
+    root {
+      width: 100%;
+      background-size: 100% 70%;
+      flex-direction: row-reverse;
   }
-    
-  
-  
-  
-  
-  
-  
-  
+
+  .cards .card {
+      width: 100%;
+      background-size: 100% 70%;
+      flex-direction: row-reverse;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

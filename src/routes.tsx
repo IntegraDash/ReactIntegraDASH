@@ -14,6 +14,7 @@ import Configuracoes from "./pages/Configuracoes";
 import './style.css'
 import Painel from "./pages/Painel";
 import Restauracao from "./pages/Restauracao";
+import Alertas from "./pages/Alertas";
 
 function MainRoutes() {
 
@@ -28,7 +29,7 @@ function MainRoutes() {
             <Route path="/recuperacao" element={<Recuperacao/>}/>
             <Route path="/estrategias" element={<Estrategia/>} />
             <Route path="/configuracoes" element={<Configuracoes/>}/>
-            <Route path="/alertas" element={<Painel/>} />
+            <Route path="/alertas" element={<Alertas/>} />
             <Route path="/restauracao" element={<Restauracao/>} />
         </Routes>
     )

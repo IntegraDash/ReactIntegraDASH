@@ -26,9 +26,9 @@
 .navigation {
     position: absolute;
     display: flex;
-    height: 100vh;
+    height: 12vh;
     background: #003D73;
-    width: 4vw;
+    width: 8vw;
     /* box-shadow: 5px 0 0 #003d73; */
     /* border-left: 10px solid #003D73; */
     overflow: hidden;
@@ -41,7 +41,8 @@
 }
 
 .navigation:hover {
-    width: 12%;
+    height: 100%;
+    width: 18%;
 }
 
 .navigation ul {

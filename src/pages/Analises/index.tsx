@@ -4,10 +4,44 @@ import Dashb from "../../assets/img/dashb.png"
 import Nivus from "../../assets/img/nivus.png"
 import Polo from "../../assets/img/polo.png"
 
+
 import "./style.css"
+import axios from "axios"
 import Header from "../../components/Header"
 import MenuLateral from "../../components/MenuLateral"
+import Erros from "../../components/Dashboards/Erros"
+import { useEffect, useState } from "react"
+
+import { Link } from "react-router-dom"
+
 export function Analises() {
+    const [user, setUser] = useState({});
+
+    // const getErros = async () => {
+    //     try {
+    //         const response = await axios.get(
+    //             "http://localhost:8080/erro" 
+    //         );
+    //         const data = response.data;
+
+    //         setErro(data);
+    //         // console.log(data);
+    //         // console.log(response);
+    //     } catch (error) {
+    //       console.log(error)  
+    //     }
+    // };
+
+    //     useEffect(() => {
+    //         getErros();
+    //     }, []);
+    useEffect(()  => {
+        axios
+            .get("http://localhost:8080/usuarios")
+            .then((response) => setUser(response.data))
+            .catch((error) => console.log(error))
+            .finally;
+    }, []);
 
     return (
         <>
@@ -92,7 +126,7 @@ export function Analises() {
                                             <div id="linha-vertical2" />
                                         </div>
                                         <div className="direito2">
-                                            <p>000</p>
+                                            <p>001</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,11 +135,12 @@ export function Analises() {
                     </section>
                     <section className="posicionamento_informacoes">
                         <div className="posicionamento">
-                            <div className="posicionamento_grafico">
+                            {/* <div className="posicionamento_grafico">
                                 <div className="graf_img">
                                     <img src={Grafico} alt="" />
                                 </div>
-                            </div>
+                            </div> */}
+                            <Erros/>
                             <div className="posicionamento_carros">
                                 <div className="posicionamento_demonstrativo">
                                     <div className="demonstrativo_planta">

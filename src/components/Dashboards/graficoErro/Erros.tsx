@@ -2,7 +2,7 @@
 import React, {Component} from "react";
 import Chart from "react-apexcharts"
 
-import "./graficoErro/style.css"
+import "./style.css"
 
 class Erros extends Component {
   constructor(props: any) {
@@ -39,7 +39,7 @@ class Erros extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="500"
+              height={390}
             />
           </div>
         </div>

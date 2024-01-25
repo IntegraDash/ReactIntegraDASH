@@ -5,26 +5,28 @@ import Nivus from "../../assets/img/nivus.png"
 import Polo from "../../assets/img/polo.png"
 
 
-import "./style.css"
+import "../Analises/styleanalises.css"
 import axios from "axios"
 import Header from "../../components/Header"
 import MenuLateral from "../../components/MenuLateral"
-import Erros from "../../components/Dashboards/Erros"
+import Status from "../../components/Dashboards/graficoStatus/Status"
+import Erros from "../../components/Dashboards/graficoErro/Erros"
 import { useEffect, useState } from "react"
+import Criticidades from "../../components/Dashboards/graficoCriticidade/Criticidades"
 
-import { Link } from "react-router-dom"
+
 
 export function Analises() {
-    const [user, setUser] = useState({});
+    // const [user, setUser] = useState({});
 
     // const getErros = async () => {
     //     try {
     //         const response = await axios.get(
-    //             "http://localhost:8080/erro" 
+    //             "http://localhost:8080/usuarios" 
     //         );
     //         const data = response.data;
 
-    //         setErro(data);
+    //         setUser(data);
     //         // console.log(data);
     //         // console.log(response);
     //     } catch (error) {
@@ -33,15 +35,29 @@ export function Analises() {
     // };
 
     //     useEffect(() => {
-    //         getErros();
+    //         getUser();
     //     }, []);
-    useEffect(()  => {
-        axios
-            .get("http://localhost:8080/usuarios")
-            .then((response) => setUser(response.data))
-            .catch((error) => console.log(error))
-            .finally;
-    }, []);
+    // useEffect(()  => {
+    //     axios
+    //         .get("http://localhost:8080/usuarios")
+    //         .then((response) => console.log(response.data))
+    //         .catch((error) => console.log(error))
+    //         .finally(console.log("Olá"));
+    // }, []);
+
+    const [users, setUsers] = useState([])
+
+    useEffect(() => {
+        //função 
+        axios.get("http://localhost:8080/usuarios")
+            .then((response) => {
+                setUsers(response.data)
+            })
+
+            .catch(() => {
+                console.log("Deu erroado")
+            })
+    }, [])
 
     return (
         <>
@@ -126,7 +142,11 @@ export function Analises() {
                                             <div id="linha-vertical2" />
                                         </div>
                                         <div className="direito2">
-                                            <p>001</p>
+                                            {users.map((user: any, key: string) => {
+                                                return (
+                                                    <p>{user.telefone}</p>
+                                                )
+                                            })}
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +160,9 @@ export function Analises() {
                                     <img src={Grafico} alt="" />
                                 </div>
                             </div> */}
-                            <Erros/>
+                            <Erros />
+                            <Status />
+                            <Criticidades />
                             <div className="posicionamento_carros">
                                 <div className="posicionamento_demonstrativo">
                                     <div className="demonstrativo_planta">
@@ -267,6 +289,6 @@ export function Analises() {
 
                 </section>
             </main>
-            </>
+        </>
     )
 }

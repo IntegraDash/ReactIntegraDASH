@@ -1,4 +1,4 @@
-import "../../pages/Alertas/style.css"
+import "../../pages/Alertas/stylealertas.css"
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';

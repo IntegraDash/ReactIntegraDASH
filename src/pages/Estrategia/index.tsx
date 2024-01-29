@@ -99,6 +99,39 @@ export default function Estrategia() {
             </div>
           </nav>
         </section>
+
+        <section>
+        <form>
+
+          <h1>Nova Estrátegia</h1>
+        <div>
+        <label htmlFor="projectName">Nome do Projeto:</label>
+        <input type="text" id="projectName" name="projectName" />
+        </div>
+
+        <label htmlFor="startDate">Data de Início:</label>
+        <input type="date" id="startDate" name="startDate" />
+
+        <label htmlFor="endDate">Data de Término:</label>
+        <input type="date" id="endDate" name="endDate" />
+
+        <label htmlFor="projectNotes">Observações do Projeto:</label>
+        <textarea id="projectNotes" name="projectNotes" defaultValue={""} />
+
+        
+  <label htmlFor="projectStatus">Status do Projeto:</label>
+
+  <select id="projectStatus" name="projectStatus">
+    <option value="toStart">A iniciar</option>
+    <option value="inProgress">Em andamento</option>
+    <option value="finished">Finalizado</option>
+  </select>
+
+  <button type="submit">Enviar</button>
+</form>
+
+        </section>
+        
       </main>
     </>
   )
